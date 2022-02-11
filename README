@@ -12,7 +12,11 @@ You can use the script `./gs_shorthand.sh`, which I used to generate images in `
 
 	$ rm -r /some/dir && mkdir /some/dir # clean input directory
 	$ ./gs_shorthand.sh etykieta_1234.pdf /some/dir
-	$ 7scissors /some/dir/ > file.pdf
+	$ 7scissors /some/dir/ 
+
+As the output you can find images in your /tmp directory (AppData/Temp on Windows) that can be later converted into pdf.
+
+See `inpost.cmd` for the whole workflow.
 
 
 Other
