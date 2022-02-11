@@ -25,7 +25,7 @@ fn save_label(img: &mut DynamicImage, x: u32, y: u32, width: u32, height: u32, l
 fn cut_image(path: &PathBuf) {
     let filename = path.file_stem().unwrap().to_str().unwrap();
     let top_pad = 30;
-    let margin = 15;
+    let margin = 19;
     let height = 900;
     let width = 2000;
 
