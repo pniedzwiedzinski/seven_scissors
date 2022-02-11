@@ -11,8 +11,11 @@ fn save_label(img: &mut DynamicImage, x: u32, y: u32, width: u32, height: u32, l
             first = Some(*pixel);
         }
         if pixel != &first.unwrap() {
+            let dir = env::temp_dir();
+            let path = format!("{}/{label}.png", dir.to_str().unwrap());
+            println!("Saved to {}", path);
             subimg
-                .save(format!("/tmp/{label}.png"))
+                .save(path)
                 .unwrap();
             return;
         }
