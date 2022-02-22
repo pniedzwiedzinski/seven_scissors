@@ -13,6 +13,7 @@ magick convert C:\Users\Praca\AppData\Local\Temp\page-*-*.png.ele  -page A4+0+41
 
 del C:\Users\Praca\AppData\Local\Temp\page-*-*.png
 del C:\Users\Praca\AppData\Local\Temp\page-*-*.png.ele
+rmdir /q C:\Users\Praca\AppData\Local\Temp\seven_scissors
 
 C:\Users\Praca\AppData\Local\Temp\etykieta-do-druku.pdf
 
