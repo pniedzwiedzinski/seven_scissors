@@ -25,7 +25,8 @@ function create_page() {
 	magick convert -quality 100 -crop 1240x554+0+$((30+$pad)) $file.out $file.$idx
 	i=$(magick identify -format "%[standard-deviation]" $file.$idx)
 	[ "2.6974e-06" != "$i" ] && \
-		magick convert -append $file.$idx $POSTER $file.a.$idx
+		#magick convert -append $file.$idx $POSTER $file.a.$idx
+		magick convert +append $file.$idx $POSTER $file.a.$idx
 }
 
 for f in page-*.png; do

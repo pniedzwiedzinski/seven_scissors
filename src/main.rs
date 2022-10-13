@@ -24,15 +24,15 @@ fn save_label(img: &mut DynamicImage, x: u32, y: u32, width: u32, height: u32, l
 
 fn cut_image(path: &PathBuf) {
     let filename = path.file_stem().unwrap().to_str().unwrap();
-    let top_pad = 30;
-    let margin = 19;
-    let height = 900;
-    let width = 2000;
+    let margin = 5;
+    let height = 1400;
+    let width = 996;
 
     let mut img = image::open(path).unwrap();
-    save_label(&mut img, 0, top_pad+margin, width, height, format!("{filename}-0"));
-    save_label(&mut img, 0, height+top_pad, width, height, format!("{filename}-1"));
-    save_label(&mut img, 0, height+height+margin, width, height, format!("{filename}-2"));
+    save_label(&mut img, 0, margin, width, height, format!("{filename}-0"));
+    save_label(&mut img, width, margin, width, height, format!("{filename}-1"));
+    save_label(&mut img, 0, height+margin, width, height, format!("{filename}-2"));
+    save_label(&mut img, width, height+margin, width, height, format!("{filename}-3"));
 
 }
 
