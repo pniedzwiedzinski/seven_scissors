@@ -13,7 +13,7 @@ for %%f in (C:\Users\Praca\AppData\Local\Temp\page-*-*.png) do (
 	magick convert +append %%f C:\Users\Public\Pictures\pieczatka.jpg %%f.ele
 )
 
-magick convert C:\Users\Praca\AppData\Local\Temp\page-*-*.png.ele  -page A4+0+410 C:\Users\Praca\AppData\Local\Temp\etykieta-do-druku.pdf
+magick convert C:\Users\Praca\AppData\Local\Temp\page-*-*.png.ele  -page A4+0+420 C:\Users\Praca\AppData\Local\Temp\etykieta-do-druku.pdf
 
 C:\Users\Praca\AppData\Local\Temp\etykieta-do-druku.pdf
 
