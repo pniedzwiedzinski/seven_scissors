@@ -30,8 +30,8 @@ fn cut_image(path: &PathBuf) {
 
     let mut img = image::open(path).unwrap();
     save_label(&mut img, 0, margin, width, height, format!("{filename}-0"));
-    save_label(&mut img, width, margin, width, height, format!("{filename}-1"));
-    save_label(&mut img, 0, height+margin, width, height, format!("{filename}-2"));
+    save_label(&mut img, 0, height+margin, width, height, format!("{filename}-1"));
+    save_label(&mut img, width, margin, width, height, format!("{filename}-2"));
     save_label(&mut img, width, height+margin, width, height, format!("{filename}-3"));
 
 }
